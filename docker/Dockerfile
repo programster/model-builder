@@ -1,6 +1,3 @@
-# Due to layout of this project, the dockerfile will be moved up two directories and run during
-# the build. Thus when performing any ADD commands, remember that this is "where you are"
-
 FROM ubuntu:20.04
 
 # Don't prompt for timezone etc.
