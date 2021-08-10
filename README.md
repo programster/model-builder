@@ -1,7 +1,5 @@
 # Model Builder
-An unfinished project for creating calculation models that could be executed in a highly parallelized manner.
-
-* [Full documentation](http://model-builder-docs.programster.org/#/)
+An unfinished project for creating calculation models that could be executed in a highly parallelized manner. The [full documentation](http://model-builder-docs.programster.org/#/) is available online.
 
 ## Process Testing
 When testing a process:
