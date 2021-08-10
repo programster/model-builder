@@ -6,16 +6,16 @@ require_once(__DIR__ . '/../bootstrap.php');
 
 $db = SiteSpecific::getDb();
 
-$model1 = ModelRecord::createNew("3.01", "The 3.02 model.");
+$model1 = ModelRecord::createNew("model1", "The first model.");
 $model1->save();
 
-$model2 = ModelRecord::createNew("3.02", "The 3.02 model.");
+$model2 = ModelRecord::createNew("model2", "The second model.");
 $model2->save();
 
-$user1 = UserRecord::createNew("Stuart", "Page", "sdpagent@gmail.com", "password");
+$user1 = UserRecord::createNew("User", "1", "user2d@mydomain.com", "password");
 $user1->save();
 
-$user2 = UserRecord::createNew("James", "Bradford", "james.bradford@irap.org", "password");
+$user2 = UserRecord::createNew("User", "2", "user2d@mydomain.com", "password");
 $user2->save();
 
 
