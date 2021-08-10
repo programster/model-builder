@@ -1,0 +1,463 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Road Attributes Schema",
+    "title": "The schema for a road attributes data point..",
+    "name": "rows",
+    "type": "array",
+    "minItems": 1,
+    "items": {
+        "name": "Row",
+        "type": "object",
+        "properties": {
+            "coder_name": {
+                "type": "string"
+            },
+            "coding_date": {
+                "type": "string"
+            },
+            "road_survey_date": {
+                "type": "string"
+            },
+            "image_reference": {
+                "type": "string"
+            },
+            "road_name": {
+                "type": "string"
+            },
+            "section": {
+                "type": "string"
+            },
+            "distance": {
+                "type": "number",
+                "minimum": 0
+            },
+            "length": {
+                "type": "number",
+                "minimum": 0
+            },
+            "latitude": {
+                "type": "number",
+                "minimum": -180,
+                "maximum": 180
+            },
+            "longitude": {
+                "type": "number",
+                "minimum": -90,
+                "maximum": 90
+            },
+            "landmark": {
+                "type": "string"
+            },
+            "comments": {
+                "type": "string"
+            },
+            "carriageway": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+            },
+            "upgrade_cost": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 3
+            },
+            "motorcycle_observed_flow": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+            },
+            "bicycle_observed_flow": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+            },
+            "pedestrian_observed_flow_across_the_road": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+            },
+            "pedestrian_observed_flow_along_the_road_driver_side": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+            },
+            "pedestrian_observed_flow_along_the_raod_passenger_side": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+            },
+            "land_use_drivers_side": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 7
+            },
+            "land_use_passenger_side": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 7
+            },
+            "area_type": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "speed_limit": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 45
+            },
+            "motorcycle_speed_limit": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 45
+            },
+            "truck_speed_limit": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 45
+            },
+            "differential_speeds": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "median_type": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 15
+            },
+            "centreline_rumble_strips": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "roadside_severity_drivers_side_distance": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 4
+            },
+            "roadside_severity_drivers_side_object": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 17
+            },
+            "roadside_severity_passenger_side_distance": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 4
+            },
+            "roadside_severity_passenger_side_object": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 17
+            },
+            "shoulder_rumble_strips": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "paved_shoulder_drivers_side": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 4
+            },
+            "paved_shoulder_passenger_side": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 4
+            },
+            "intersection_type": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 17
+            },
+            "intersection_channelisation": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "intersecting_road_volume": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 7
+            },
+            "intersection_quality": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 3
+            },
+            "property_access_points": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 4
+            },
+            "number_of_lanes": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+            },
+            "lane_width": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "curvature": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 4
+            },
+            "quality_of_curve": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 3
+            },
+            "grade": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+            },
+            "road_condition": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 3
+            },
+            "skid_resistance_grip": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+            },
+            "delineation": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "street_lighting": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "pedestrian_crossing_inspected_road": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 17
+            },
+            "pedestrian_crossing_quality": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 3
+            },
+            "pedestrian_crossing_facilities_side_road": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 17
+            },
+            "pedestrian_fencing": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "speed_management_traffic_calming": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "vehicle_parking": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 3
+            },
+            "sidewalk_drivers_side": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 7
+            },
+            "sidewalk_passenger_side": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 7
+            },
+            "service_road": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "facilities_for_motorised_two_wheelers": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+            },
+            "bicycle_facility": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 7
+            },
+            "roadworks": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 3
+            },
+            "sight_distance": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "vehicle_flow_aadt": {
+                "type": "integer",
+                "minimum": 0
+            },
+            "motorcyle_percentage": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 10
+            },
+            "ped_peak_hour_flow_across": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 11
+            },
+            "ped_peak_hour_flow_along_driver_side": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 11
+            },
+            "ped_peak_hour_flow_along_passenger_side": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 11
+            },
+            "bicycle_peak_hour_flow": {
+                "type": "integer",
+                "minimum": 0
+            },
+            "operating_speed_85th_percentile": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 45
+            },
+            "operating_speed_mean": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 45
+            },
+            "roads_that_cars_can_read": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 2
+            },
+            "car_star_rating_policy_target": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+            },
+            "motorcycle_star_rating_policy_target": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+            },
+            "ped_star_rating_policy_target": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+            },
+            "bicycle_star_rating_policy_target": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+            },
+            "annual_fatality_growth_multiplier": {
+                "type": "number",
+                "minimum": 0
+            },
+            "school_zone_warning": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 4
+            },
+            "school_zone_crossing_supervisor": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 3
+            }
+        },
+        "required": [
+            "coder_name",
+            "coding_date",
+            "road_survey_date",
+            "image_reference",
+            "road_name",
+            "section",
+            "distance",
+            "length",
+            "latitude",
+            "longitude",
+            "landmark",
+            "comments",
+            "carriageway",
+            "upgrade_cost",
+            "motorcycle_observed_flow",
+            "bicycle_observed_flow",
+            "pedestrian_observed_flow_across_the_road",
+            "pedestrian_observed_flow_along_the_road_driver_side",
+            "pedestrian_observed_flow_along_the_raod_passenger_side",
+            "land_use_drivers_side",
+            "land_use_passenger_side",
+            "area_type",
+            "speed_limit",
+            "motorcycle_speed_limit",
+            "truck_speed_limit",
+            "differential_speeds",
+            "median_type",
+            "centreline_rumble_strips",
+            "roadside_severity_drivers_side_distance",
+            "roadside_severity_drivers_side_object",
+            "roadside_severity_passenger_side_distance",
+            "roadside_severity_passenger_side_object",
+            "shoulder_rumble_strips",
+            "paved_shoulder_drivers_side",
+            "paved_shoulder_passenger_side",
+            "intersection_type",
+            "intersection_channelisation",
+            "intersecting_road_volume",
+            "intersection_quality",
+            "property_access_points",
+            "number_of_lanes",
+            "lane_width",
+            "curvature",
+            "quality_of_curve",
+            "grade",
+            "road_condition",
+            "skid_resistance_grip",
+            "delineation",
+            "street_lighting",
+            "pedestrian_crossing_inspected_road",
+            "pedestrian_crossing_quality",
+            "pedestrian_crossing_facilities_side_road",
+            "pedestrian_fencing",
+            "speed_management_traffic_calming",
+            "vehicle_parking",
+            "sidewalk_drivers_side",
+            "sidewalk_passenger_side",
+            "service_road",
+            "facilities_for_motorised_two_wheelers",
+            "bicycle_facility",
+            "roadworks",
+            "sight_distance",
+            "vehicle_flow_aadt",
+            "motorcyle_percentage",
+            "ped_peak_hour_flow_across",
+            "ped_peak_hour_flow_along_driver_side",
+            "ped_peak_hour_flow_along_passenger_side",
+            "bicycle_peak_hour_flow",
+            "operating_speed_85th_percentile",
+            "operating_speed_mean",
+            "roads_that_cars_can_read",
+            "car_star_rating_policy_target",
+            "motorcycle_star_rating_policy_target",
+            "ped_star_rating_policy_target",
+            "bicycle_star_rating_policy_target",
+            "annual_fatality_growth_multiplier",
+            "school_zone_warning",
+            "school_zone_crossing_supervisor"
+        ]
+    }
+}

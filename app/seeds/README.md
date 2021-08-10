@@ -1,0 +1,1 @@
+This location is for placing your database seeds. Please be sure to prefix your seed filenames with a number in the order you wish for them to execute.

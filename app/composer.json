@@ -1,0 +1,12 @@
+{
+    "require": {
+        "irap/autoloader": "^1.0",
+        "programster/abstract-view": "^1.1",
+        "programster/pgsql-migrations": "^0.3.2",
+        "programster/pgsql-objects": "1.1.*",
+        "slim/slim": "^4.8",
+        "slim/psr7": "^1.4",
+        "symfony/dotenv": "^5.3",
+        "swaggest/json-schema": "^0.12.35"
+    }
+}

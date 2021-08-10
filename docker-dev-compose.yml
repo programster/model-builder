@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+    app:
+        build:
+            context: .
+            dockerfile: ./docker/Dockerfile
+        container_name: app
+        image: ${REGISTRY}/my-project-name
+        restart: always
+        ports:
+            - "80:80"
+            - "443:443"
+        depends_on:
+            - db
+        volumes:
+            - ./app:/var/www/my-site
+            - ./ssl:/etc/apache2/ssl
+        env_file:
+            - ./.env
+
+    db:
+        image: postgres:13
+        container_name: db
+        restart: always
+        ports:
+            - 5432:5432
+        volumes:
+            - db-data:/var/lib/postgresql/data
+        env_file:
+            - ./.env
+
+volumes:
+    db-data:
+        driver: local
